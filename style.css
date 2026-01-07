@@ -66,3 +66,73 @@ button {
     border-radius: 4px;
     background: #0a61f7;
 }
+
+.rates-section {
+    background: #f9fafc;
+    padding: 100px 0;
+}
+
+.rates-title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.34375;
+    color: #363940;
+    margin-bottom: 20px;
+}
+
+.table {
+    border-collapse: collapse;
+}
+
+th, td {
+   border: 1px solid #95A1BB;
+   width: 240px;
+   text-align: center;
+   padding: 15px 0;
+}
+
+.column{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22222;
+    color: #363940;
+}
+
+.line-title {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.57143;
+    color: #363940;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.line-title.features {
+    color: #95a1bb;
+}
+
+.table-link {
+    color: #0a61f7;
+}
+
+.table-button {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.63333;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #0a61f7;
+    border: 1px solid #0a61f7;
+    border-radius: 4px;
+    width: 140px;
+    padding: 8px 0;
+}
+
+.table-button.push {
+    background: #0a61f7;
+    color: #fff;
+}
+
+.table-footer td {
+    padding: 30px 0;
+}
