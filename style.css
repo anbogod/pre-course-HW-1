@@ -22,6 +22,20 @@ button {
     background-color: transparent;
 }
 
+.title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.34375;
+    color: #363940;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.375;
+    color: #95a1bb;
+}
+
 .header {
     background: #0a61f7;
     padding: 14px 0;
@@ -46,11 +60,7 @@ button {
     margin-bottom: 30px;
 }
 
-.text {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.375;
-    color: #95a1bb;
+.main .text {
     margin-bottom: 40px;
 }
 
@@ -72,23 +82,24 @@ button {
     padding: 100px 0;
 }
 
-.rates-title {
-    font-weight: 500;
-    font-size: 32px;
-    line-height: 1.34375;
-    color: #363940;
+.rates-section .title {
     margin-bottom: 20px;
+}
+
+.rates-section .text {
+    margin-bottom: 40px;
 }
 
 .table {
     border-collapse: collapse;
 }
 
+
 th, td {
-   border: 1px solid #95A1BB;
-   width: 240px;
-   text-align: center;
-   padding: 15px 0;
+    border: 1px solid #95A1BB;
+    width: 240px;
+    text-align: center;
+    padding: 15px 0;
 }
 
 .column{
@@ -135,4 +146,91 @@ th, td {
 
 .table-footer td {
     padding: 30px 0;
+}
+
+.create-account-section {
+    padding: 100px 0;
+    background: #fff;
+}
+
+.create-account-section .title {
+    margin-bottom: 50px;
+    line-height: 1.25;
+}
+
+.create-account-section .text {
+    margin-bottom: 40px;
+    max-width: 500px;
+}
+
+.list-item {
+    margin-bottom: 15px;
+    color: #363940;
+    margin-left: 30px;
+    list-style-image: url(./assets/images/Mask.png);
+}
+
+form {
+    width: 100%;
+    max-width: 500px;
+}
+
+input, select, fieldset, textarea {
+    padding: 14px 15px;
+    border: 1px solid #95a1bb;
+    border-radius: 4px;
+}
+
+input, select, fieldset, textarea, label, legend, input::placeholder, select::placeholder, textarea::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #95a1bb;
+    font-family: inherit;
+}
+
+input[type=text] {
+    width: 100%;
+}
+
+input[type=email], input[type=password], input[type=date], select {
+    width: 230px;
+    height: 50px;
+}
+
+fieldset {
+    width: 100%;
+    padding: 30px 15px;
+}
+
+textarea {
+    width: 100%;
+    min-height: 80px;
+    resize: none;
+}
+
+form .button {
+    width: 100%;
+}
+
+select {
+    background: url(./assets/images/Arrow-down.svg) no-repeat right 15px top 50%;
+    appearance: none;
+}
+
+input[type=date]::-webkit-calendar-picker-indicator {
+    background: url(./assets/images/Calendar.svg) no-repeat;
+}
+
+.footer {
+    background-color: #0a61f7;
+    text-align: center;
+    padding: 20px 0;
+}
+
+small {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.57143;
+    color: #fff;
 }
