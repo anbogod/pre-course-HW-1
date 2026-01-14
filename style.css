@@ -13,6 +13,9 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    text-decoration: underline;
+}
 ul {
     list-style: none;
 }
@@ -20,6 +23,12 @@ ul {
 button {
     border: none;
     background-color: transparent;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.button:hover {
+    transform: translateY(-5px);
 }
 
 .title {
@@ -41,6 +50,25 @@ button {
     padding: 14px 0;
 }
 
+.container {
+    height: 100%;
+    width: 100%;
+    max-width: 1170px;
+    padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu{
+    display: flex;
+    gap: 24px;
+}
 .menu-link {
     font-weight: 500;
     font-size: 12px;
@@ -50,6 +78,17 @@ button {
     /* text-align: right; */
     color: #fff;
     /* font-family: "Rubik", sans-serif; */
+}
+
+.main-wrapper{
+    display: flex;  
+    justify-content: space-between;
+    align-items: center;
+    height: 800px;
+}
+
+.main-img {
+    align-self: flex-end;
 }
 
 .main-title {
@@ -62,6 +101,7 @@ button {
 
 .main .text {
     margin-bottom: 40px;
+    max-width: 380px;
 }
 
 .button {
@@ -77,6 +117,11 @@ button {
     background: #0a61f7;
 }
 
+.rates-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .rates-section {
     background: #f9fafc;
     padding: 100px 0;
@@ -148,6 +193,29 @@ th, td {
     padding: 30px 0;
 }
 
+.account-wrapper {
+    display: flex;
+    justify-content: space-between;
+    /* align-content: flex-start; */
+}
+
+.list-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+}
+
+.radio-wrapper, fieldset {
+    display: flex;
+    gap: 30px;
+}
+
 .create-account-section {
     padding: 100px 0;
     background: #fff;
@@ -173,6 +241,9 @@ th, td {
 form {
     width: 100%;
     max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
 }
 
 input, select, fieldset, textarea {
@@ -196,6 +267,11 @@ input[type=text] {
 input[type=email], input[type=password], input[type=date], select {
     width: 230px;
     height: 50px;
+    flex-grow: 1;
+}
+
+input[type=radio], input[type=checkbox], input[type=date], select {
+    cursor: pointer;
 }
 
 fieldset {
